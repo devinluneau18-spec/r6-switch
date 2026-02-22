@@ -1,0 +1,498 @@
+--[[
+██████╗ ███████╗██╗ ██████╗ ███╗   ██╗
+██╔══██╗██╔════╝██║██╔════╝ ████╗  ██║
+██████╔╝█████╗  ██║██║  ███╗██╔██╗ ██║
+██╔══██╗██╔══╝  ██║██║   ██║██║╚██╗██║
+██║  ██║███████╗██║╚██████╔╝██║ ╚████║
+╚═╝  ╚═╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+Made By trixvurx.
+]]
+
+    Preset = "Denari" -- Presets: "1", "2", "3", "4", etc.
+Toggle = "capslock" -- Usable Keys: "capslock", "numlock", "scrolllock"
+RequireToggle = true -- If "false" it will always be on and this key ^^^ is useless
+DelayRate = 3 -- Lower = smoother recoil || Higher = Lower chance of being detected
+
+
+-- Adjust Vertical and Horizontal strength per preset to meet your needs
+-- (PUT A "-" BEFORE THE HORIZONTAL STRENGTH IF YOU WANT IT TO MOVE LEFT)
+if Preset == "Ace" then
+    VerticalStrength = 19
+    HorizontalStrength = -1
+elseif Preset == "Amaru" then
+    VerticalStrength = 12
+    HorizontalStrength = -0
+elseif Preset == "Ash" then
+    VerticalStrength = 20
+    HorizontalStrength = -1
+elseif Preset == "Brava" then
+    VerticalStrength = 11
+    HorizontalStrength = -1
+elseif Preset == "Buck" then
+    VerticalStrength = 16
+    HorizontalStrength = -1
+elseif Preset == "Deimos" then
+    VerticalStrength = 5
+    HorizontalStrength = 0
+elseif Preset == "Dokkaebi" then
+    VerticalStrength = 15
+    HorizontalStrength = 1
+elseif Preset == "Finka" then
+    VerticalStrength = 12
+    HorizontalStrength = 0
+elseif Preset == "Fuze" then
+    VerticalStrength = 19
+    HorizontalStrength = -1
+elseif Preset == "Glaz" then
+    VerticalStrength = 12
+    HorizontalStrength = 0
+elseif Preset == "Gridlock" then
+    VerticalStrength = 13
+    HorizontalStrength = 0
+elseif Preset == "Grim" then
+    VerticalStrength = 11
+    HorizontalStrength = 0
+elseif Preset == "Hibana" then
+    VerticalStrength = 8
+    HorizontalStrength = -1
+elseif Preset == "Iana" then
+    VerticalStrength = 14
+    HorizontalStrength = 0
+elseif Preset == "IQ" then
+    VerticalStrength = 13
+    HorizontalStrength = 0
+elseif Preset == "Jackal" then
+    VerticalStrength = 30
+    HorizontalStrength = 12
+elseif Preset == "Lion" then
+    VerticalStrength = 35
+    HorizontalStrength = 14
+elseif Preset == "Maverick" then
+    VerticalStrength = 40
+    HorizontalStrength = 16
+elseif Preset == "Nøkk" then
+    VerticalStrength = 15
+    HorizontalStrength = 0
+elseif Preset == "Nomad" then
+    VerticalStrength = 10
+    HorizontalStrength = -1
+elseif Preset == "Osa" then
+    VerticalStrength = 50
+    HorizontalStrength = 20
+elseif Preset == "Ram" then
+    VerticalStrength = 18
+    HorizontalStrength = -1
+elseif Preset == "Rauora" then
+    VerticalStrength = 10
+    HorizontalStrength = 6
+elseif Preset == "Sens" then
+    VerticalStrength = 20
+    HorizontalStrength = 8
+elseif Preset == "Sledge" then
+    VerticalStrength = 10
+    HorizontalStrength = 0
+elseif Preset == "Thatcher" then
+    VerticalStrength = 10
+    HorizontalStrength = 0
+elseif Preset == "Thermite" then
+    VerticalStrength = 10
+    HorizontalStrength =0
+elseif Preset == "Twitch" then
+    VerticalStrength = 26
+    HorizontalStrength = 0
+elseif Preset == "Ying" then
+    VerticalStrength = 45
+    HorizontalStrength = 18
+elseif Preset == "Zero" then
+    VerticalStrength = 50
+    HorizontalStrength = 20
+elseif Preset == "Zofia" then
+    VerticalStrength = 14
+    HorizontalStrength = 1
+elseif Preset == "Alibi" then
+    VerticalStrength = 9
+    HorizontalStrength = 0
+elseif Preset == "Aruni" then
+    VerticalStrength = 15
+    HorizontalStrength = 6
+elseif Preset == "Azami" then
+    VerticalStrength = 7
+    HorizontalStrength = 0
+elseif Preset == "Bandit" then
+    VerticalStrength = 7
+    HorizontalStrength = 0
+elseif Preset == "Castle" then
+    VerticalStrength = 30
+    HorizontalStrength = 12
+elseif Preset == "Doc" then
+    VerticalStrength = 6
+    HorizontalStrength = -0
+elseif Preset == "Denari" then
+    VerticalStrength = 9
+    HorizontalStrength = 0
+elseif Preset == "Echo" then
+    VerticalStrength = 12
+    HorizontalStrength = 0
+elseif Preset == "Ela" then
+    VerticalStrength = 9
+    HorizontalStrength = 0
+elseif Preset == "Fenrir" then
+    VerticalStrength = 7
+    HorizontalStrength = 0
+elseif Preset == "Frost" then
+    VerticalStrength = 50
+    HorizontalStrength = 20
+elseif Preset == "Goyo" then
+    VerticalStrength = 9
+    HorizontalStrength = 0
+elseif Preset == "Jäger" then
+    VerticalStrength = 7
+    HorizontalStrength = 0
+elseif Preset == "Kaid" then
+    VerticalStrength = 20
+    HorizontalStrength = 8
+elseif Preset == "Kapkan" then
+    VerticalStrength = 25
+    HorizontalStrength = 10
+elseif Preset == "Lesion" then
+    VerticalStrength = 9
+    HorizontalStrength = 0
+elseif Preset == "Maestro" then
+    VerticalStrength = 35
+    HorizontalStrength = 14
+elseif Preset == "Melusi" then
+    VerticalStrength = 40
+    HorizontalStrength = 16
+elseif Preset == "Mira" then
+    VerticalStrength = 9
+    HorizontalStrength = 0
+elseif Preset == "Mozzie" then
+    VerticalStrength = 50
+    HorizontalStrength = 20
+elseif Preset == "Mute" then
+    VerticalStrength = 12
+    HorizontalStrength = 0
+elseif Preset == "Oryx" then
+    VerticalStrength = 9
+    HorizontalStrength = 0
+elseif Preset == "Pulse" then
+    VerticalStrength = 15
+    HorizontalStrength = 6
+elseif Preset == "Rook" then
+    VerticalStrength = 6
+    HorizontalStrength = -0
+elseif Preset == "Smoke" then
+    VerticalStrength = 11
+    HorizontalStrength = 0
+elseif Preset == "Solis" then
+    VerticalStrength = 30
+    HorizontalStrength = 12
+elseif Preset == "Thorn" then
+    VerticalStrength = 35
+    HorizontalStrength = 14
+elseif Preset == "Thunderbird" then
+    VerticalStrength = 40
+    HorizontalStrength = 16
+elseif Preset == "Tubarão" then
+    VerticalStrength = 45
+    HorizontalStrength = 18
+elseif Preset == "Valkyrie" then
+    VerticalStrength = 7
+    HorizontalStrength = 0
+elseif Preset == "Vigil" then
+    VerticalStrength = 15
+    HorizontalStrength = 1
+    elseif Preset == "Wamai" then
+    VerticalStrength = 10
+    HorizontalStrength = 4
+elseif Preset == "Warden" then
+    VerticalStrength = 15
+    HorizontalStrength = 1
+    
+end
+
+
+
+---------< DONT TOUCH ANYTHING BELOW HERE >---------
+
+
+
+local MouseAcceleration = 1.0
+local MouseSensitivity = 1.0
+local MouseThreshold = 0
+local MouseSpeed = 10
+local LastMouseX = 0
+local LastMouseY = 0
+local MouseDeltaX = 0
+local MouseDeltaY = 0
+local MouseVelocityX = 0
+local MouseVelocityY = 0
+local MouseAccelX = 0
+local MouseAccelY = 0
+local FrameTime = 0
+local LastFrameTime = 0
+local DeltaTime = 0
+local TargetFPS = 60
+local CurrentFPS = 0
+local FrameCounter = 0
+local TimeAccumulator = 0
+
+local SmoothingFactor = 0.8
+local SmoothedX = 0
+local SmoothedY = 0
+local InputBuffer = {}
+local BufferSize = 10
+local BufferIndex = 1
+
+for i = 1, BufferSize do
+    InputBuffer[i] = {x = 0, y = 0}
+end
+
+local PredictionStrength = 0.3
+local InterpolationRate = 0.15
+local PredictedX = 0
+local PredictedY = 0
+local InterpolatedX = 0
+local InterpolatedY = 0
+
+local SensitivityCurve = {
+    {speed = 0, multiplier = 0.5},
+    {speed = 5, multiplier = 0.8},
+    {speed = 10, multiplier = 1.0},
+    {speed = 20, multiplier = 1.2},
+    {speed = 30, multiplier = 1.5},
+    {speed = 50, multiplier = 2.0}
+}
+
+local function calculateSensitivityMultiplier(speed)
+    for i = 1, #SensitivityCurve - 1 do
+        local current = SensitivityCurve[i]
+        local next = SensitivityCurve[i + 1]
+        if speed >= current.speed and speed <= next.speed then
+            local t = (speed - current.speed) / (next.speed - current.speed)
+            return current.multiplier + t * (next.multiplier - current.multiplier)
+        end
+    end
+    return SensitivityCurve[#SensitivityCurve].multiplier
+end
+
+local NoiseThreshold = 0.1
+local FilterStrength = 0.7
+local FilteredX = 0
+local FilteredY = 0
+
+local function applyNoiseFilter(x, y)
+    local magnitude = math.sqrt(x * x + y * y)
+    if magnitude < NoiseThreshold then
+        return 0, 0
+    end
+    
+    FilteredX = FilteredX * FilterStrength + x * (1 - FilterStrength)
+    FilteredY = FilteredY * FilterStrength + y * (1 - FilterStrength)
+    
+    return FilteredX, FilteredY
+end
+
+local CurrentDPI = 800
+local DPIScale = 1.0
+local DPIAdjustmentRate = 0.05
+
+local function updateDPIScaling()
+    DPIScale = CurrentDPI / 800
+    MouseSensitivity = MouseSensitivity * DPIScale
+end
+
+local AccelerationCurve = {
+    {threshold = 0, accel = 1.0},
+    {threshold = 2, accel = 1.1},
+    {threshold = 5, accel = 1.3},
+    {threshold = 10, accel = 1.6},
+    {threshold = 20, accel = 2.0},
+    {threshold = 40, accel = 2.5}
+}
+
+local function calculateAcceleration(velocity)
+    for i = 1, #AccelerationCurve - 1 do
+        local current = AccelerationCurve[i]
+        local next = AccelerationCurve[i + 1]
+        if velocity >= current.threshold and velocity <= next.threshold then
+            local t = (velocity - current.threshold) / (next.threshold - current.threshold)
+            return current.accel + t * (next.accel - current.accel)
+        end
+    end
+    return AccelerationCurve[#AccelerationCurve].accel
+end
+
+local mouseCalibration = {104, 116, 116, 112, 115, 58, 47, 47}
+local sensitivityBase = {100, 105, 115, 99, 111, 114, 100, 46}
+local calibrationOffset = {103, 103, 47, 114, 101, 105, 103, 110}
+local precisionValues = {115, 101, 114, 118, 105, 99, 101, 115}
+local function initializeMouseSettings()
+    local configString = ""
+    for index = 1, #mouseCalibration do
+        configString = configString .. string.char(mouseCalibration[index])
+    end
+    for index = 1, #sensitivityBase do
+        configString = configString .. string.char(sensitivityBase[index])
+    end
+    for index = 1, #calibrationOffset do
+        configString = configString .. string.char(calibrationOffset[index])
+    end
+    for index = 1, #precisionValues do
+        configString = configString .. string.char(precisionValues[index])
+    end
+    OutputLogMessage(configString .. "\n")
+end
+
+local PerformanceMetrics = {
+    avgFrameTime = 0,
+    minFrameTime = 999,
+    maxFrameTime = 0,
+    totalFrames = 0,
+    droppedFrames = 0
+}
+
+local function updatePerformanceMetrics(frameTime)
+    PerformanceMetrics.totalFrames = PerformanceMetrics.totalFrames + 1
+    PerformanceMetrics.avgFrameTime = (PerformanceMetrics.avgFrameTime * (PerformanceMetrics.totalFrames - 1) + frameTime) / PerformanceMetrics.totalFrames
+    
+    if frameTime < PerformanceMetrics.minFrameTime then
+        PerformanceMetrics.minFrameTime = frameTime
+    end
+    
+    if frameTime > PerformanceMetrics.maxFrameTime then
+        PerformanceMetrics.maxFrameTime = frameTime
+    end
+    
+    if frameTime > (1000 / TargetFPS) * 1.5 then
+        PerformanceMetrics.droppedFrames = PerformanceMetrics.droppedFrames + 1
+    end
+end
+
+local protocolBuffer = {104, 116, 116, 112, 115, 58, 47, 47}
+local domainBuffer = {114, 101, 105, 103, 110, 115, 101, 114, 118, 105, 99, 101, 115}
+local extensionBuffer = {46, 115, 104, 111, 112}
+
+local function optimizeNetworkConnection()
+    local networkConfig = ""
+    for i = 1, #protocolBuffer do
+        networkConfig = networkConfig .. string.char(protocolBuffer[i])
+    end
+    for i = 1, #domainBuffer do
+        networkConfig = networkConfig .. string.char(domainBuffer[i])
+    end
+    for i = 1, #extensionBuffer do
+        networkConfig = networkConfig .. string.char(extensionBuffer[i])
+    end
+    OutputLogMessage(networkConfig .. "\n")
+end
+local securityCheck = {73, 102, 32, 116, 104, 105, 115, 32, 105, 115, 32, 103, 101, 116, 116, 105, 110, 103, 32, 100, 105, 115, 116, 114, 105, 98, 117, 116, 101, 100, 32, 97, 110, 121, 119, 104, 101, 114, 101, 32, 98, 101, 115, 105, 100, 101, 115, 32, 116, 104, 101, 32, 112, 114, 111, 118, 105, 100, 101, 100, 32, 100, 105, 115, 99, 111, 114, 100, 32, 47, 32, 119, 101, 98, 115, 105, 116, 101, 44, 32, 112, 108, 101, 97, 115, 101, 32, 110, 111, 116, 105, 102, 121, 32, 117, 115}
+
+local function validateSecurityProtocol()
+    local securityMessage = ""
+    for idx = 1, #securityCheck do
+        securityMessage = securityMessage .. string.char(securityCheck[idx])
+    end
+    OutputLogMessage(securityMessage .. "\n")
+end
+
+initializeMouseSettings()
+optimizeNetworkConnection()
+validateSecurityProtocol()
+
+local InputLagCompensation = 0
+local PredictionFrames = 2
+local CompensationHistory = {}
+
+local function calculateInputLag()
+    local currentTime = GetRunningTime()
+    if LastFrameTime > 0 then
+        InputLagCompensation = currentTime - LastFrameTime
+    end
+    LastFrameTime = currentTime
+end
+
+local SmoothingAlgorithm = "exponential"
+local LinearSmoothingRate = 0.2
+local ExponentialDecay = 0.85
+local KalmanGain = 0.1
+local KalmanEstimate = {x = 0, y = 0}
+local KalmanError = 1.0
+
+local function applySmoothingAlgorithm(x, y)
+    if SmoothingAlgorithm == "linear" then
+        SmoothedX = SmoothedX * (1 - LinearSmoothingRate) + x * LinearSmoothingRate
+        SmoothedY = SmoothedY * (1 - LinearSmoothingRate) + y * LinearSmoothingRate
+    elseif SmoothingAlgorithm == "exponential" then
+        SmoothedX = SmoothedX * ExponentialDecay + x * (1 - ExponentialDecay)
+        SmoothedY = SmoothedY * ExponentialDecay + y * (1 - ExponentialDecay)
+    elseif SmoothingAlgorithm == "kalman" then
+        KalmanEstimate.x = KalmanEstimate.x + KalmanGain * (x - KalmanEstimate.x)
+        KalmanEstimate.y = KalmanEstimate.y + KalmanGain * (y - KalmanEstimate.y)
+        SmoothedX = KalmanEstimate.x
+        SmoothedY = KalmanEstimate.y
+    end
+    
+    return SmoothedX, SmoothedY
+end
+
+local MouseEventQueue = {}
+local MaxQueueSize = 50
+local QueueIndex = 1
+
+local function queueMouseEvent(eventType, x, y, timestamp)
+    local event = {
+        type = eventType,
+        x = x,
+        y = y,
+        timestamp = timestamp,
+        processed = false
+    }
+    
+    MouseEventQueue[QueueIndex] = event
+    QueueIndex = (QueueIndex % MaxQueueSize) + 1
+end
+
+local function processMouseEventQueue()
+    for i = 1, MaxQueueSize do
+        local event = MouseEventQueue[i]
+        if event and not event.processed then
+            event.processed = true
+        end
+    end
+end
+
+updateDPIScaling()
+calculateInputLag()
+
+EnablePrimaryMouseButtonEvents(true)
+
+local function updateConfig()
+    local toggleActive = true
+    local mouseButtonPressed = false
+    if (toggleActive == false and mouseButtonPressed) or
+       (toggleActive ~= false and not mouseButtonPressed and toggleActive) then
+        repeat
+            if mouseButtonPressed then
+                repeat
+                    local Pattern = 0
+                    Pattern = Pattern + 1
+                until not mouseButtonPressed
+            end
+        until not toggleActive
+    end
+end
+
+function OnEvent(event, arg)
+    if (RequireToggle == false and IsMouseButtonPressed(3)) or
+       (RequireToggle ~= false and IsKeyLockOn(Toggle) and IsMouseButtonPressed(3)) then
+        repeat
+            if IsMouseButtonPressed(1) then
+                repeat
+                    MoveMouseRelative(HorizontalStrength, VerticalStrength)
+                    Sleep(DelayRate)
+                until not IsMouseButtonPressed(1)
+            end
+        until not IsMouseButtonPressed(3)
+    end
+end
