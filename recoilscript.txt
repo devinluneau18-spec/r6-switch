@@ -1,12 +1,4 @@
---[[
-██████╗ ███████╗██╗ ██████╗ ███╗   ██╗
-██╔══██╗██╔════╝██║██╔════╝ ████╗  ██║
-██████╔╝█████╗  ██║██║  ███╗██╔██╗ ██║
-██╔══██╗██╔══╝  ██║██║   ██║██║╚██╗██║
-██║  ██║███████╗██║╚██████╔╝██║ ╚████║
-╚═╝  ╚═╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝
-Made By trixvurx.
-]]
+
 
     Preset = "Denari" -- Presets: "1", "2", "3", "4", etc.
 Toggle = "capslock" -- Usable Keys: "capslock", "numlock", "scrolllock"
@@ -495,4 +487,5 @@ function OnEvent(event, arg)
             end
         until not IsMouseButtonPressed(3)
     end
+
 end
