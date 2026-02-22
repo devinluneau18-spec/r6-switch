@@ -1,6 +1,6 @@
 
 
-    Preset = "Denari" -- Presets: "1", "2", "3", "4", etc.
+    Preset = "Finka" -- Presets: "1", "2", "3", "4", etc.
 Toggle = "capslock" -- Usable Keys: "capslock", "numlock", "scrolllock"
 RequireToggle = true -- If "false" it will always be on and this key ^^^ is useless
 DelayRate = 3 -- Lower = smoother recoil || Higher = Lower chance of being detected
@@ -8,26 +8,29 @@ DelayRate = 3 -- Lower = smoother recoil || Higher = Lower chance of being detec
 
 -- Adjust Vertical and Horizontal strength per preset to meet your needs
 -- (PUT A "-" BEFORE THE HORIZONTAL STRENGTH IF YOU WANT IT TO MOVE LEFT)
-if Preset == "Ace" then
-    VerticalStrength = 19
+if Preset == "ace" then
+    VerticalStrength = 30
     HorizontalStrength = -1
-elseif Preset == "Amaru" then
+elseif Preset == "amaru" then
     VerticalStrength = 12
     HorizontalStrength = -0
-elseif Preset == "Ash" then
-    VerticalStrength = 20
+elseif Preset == "ash" then
+    VerticalStrength = 29
     HorizontalStrength = -1
-elseif Preset == "Brava" then
-    VerticalStrength = 11
+elseif Preset == "brava" then
+    VerticalStrength = 17
     HorizontalStrength = -1
-elseif Preset == "Buck" then
-    VerticalStrength = 16
+elseif Preset == "frost" then
+    VerticalStrength = 8
     HorizontalStrength = -1
-elseif Preset == "Deimos" then
-    VerticalStrength = 5
+elseif Preset == "buck" then
+    VerticalStrength = 22
+    HorizontalStrength = -1
+elseif Preset == "deimos" then
+    VerticalStrength = 17
     HorizontalStrength = 0
-elseif Preset == "Dokkaebi" then
-    VerticalStrength = 15
+elseif Preset == "dokkaebi" then
+    VerticalStrength = 24
     HorizontalStrength = 1
 elseif Preset == "Finka" then
     VerticalStrength = 12
@@ -36,13 +39,13 @@ elseif Preset == "Fuze" then
     VerticalStrength = 19
     HorizontalStrength = -1
 elseif Preset == "Glaz" then
-    VerticalStrength = 12
+    VerticalStrength = 15
     HorizontalStrength = 0
 elseif Preset == "Gridlock" then
     VerticalStrength = 13
     HorizontalStrength = 0
-elseif Preset == "Grim" then
-    VerticalStrength = 11
+elseif Preset == "grim" then
+    VerticalStrength = 18
     HorizontalStrength = 0
 elseif Preset == "Hibana" then
     VerticalStrength = 8
@@ -56,23 +59,23 @@ elseif Preset == "IQ" then
 elseif Preset == "Jackal" then
     VerticalStrength = 30
     HorizontalStrength = 12
-elseif Preset == "Lion" then
-    VerticalStrength = 35
-    HorizontalStrength = 14
-elseif Preset == "Maverick" then
-    VerticalStrength = 40
-    HorizontalStrength = 16
-elseif Preset == "Nøkk" then
-    VerticalStrength = 15
+elseif Preset == "lion" then
+    VerticalStrength = 17
     HorizontalStrength = 0
-elseif Preset == "Nomad" then
-    VerticalStrength = 10
+elseif Preset == "maverick" then
+    VerticalStrength = 22
+    HorizontalStrength = -2
+elseif Preset == "nokk" then
+    VerticalStrength = 25
+    HorizontalStrength = 0
+elseif Preset == "nomad" then
+    VerticalStrength = 17
     HorizontalStrength = -1
 elseif Preset == "Osa" then
     VerticalStrength = 50
     HorizontalStrength = 20
-elseif Preset == "Ram" then
-    VerticalStrength = 18
+elseif Preset == "ram" then
+    VerticalStrength = 29
     HorizontalStrength = -1
 elseif Preset == "Rauora" then
     VerticalStrength = 10
@@ -83,14 +86,14 @@ elseif Preset == "Sens" then
 elseif Preset == "Sledge" then
     VerticalStrength = 10
     HorizontalStrength = 0
-elseif Preset == "Thatcher" then
-    VerticalStrength = 10
+elseif Preset == "thatcher" then
+    VerticalStrength = 16
     HorizontalStrength = 0
-elseif Preset == "Thermite" then
-    VerticalStrength = 10
+elseif Preset == "thermite" then
+    VerticalStrength = 16
     HorizontalStrength =0
-elseif Preset == "Twitch" then
-    VerticalStrength = 26
+elseif Preset == "twitch" then
+    VerticalStrength = 43
     HorizontalStrength = 0
 elseif Preset == "Ying" then
     VerticalStrength = 45
@@ -101,68 +104,65 @@ elseif Preset == "Zero" then
 elseif Preset == "Zofia" then
     VerticalStrength = 14
     HorizontalStrength = 1
-elseif Preset == "Alibi" then
-    VerticalStrength = 9
-    HorizontalStrength = 0
-elseif Preset == "Aruni" then
+elseif Preset == "alibi" then
     VerticalStrength = 15
-    HorizontalStrength = 6
-elseif Preset == "Azami" then
-    VerticalStrength = 7
-    HorizontalStrength = 0
-elseif Preset == "Bandit" then
-    VerticalStrength = 7
-    HorizontalStrength = 0
+    HorizontalStrength = 1
+elseif Preset == "aruni" then
+    VerticalStrength = 8
+    HorizontalStrength = -1
+elseif Preset == "azami" then
+    VerticalStrength = 10
+    HorizontalStrength = -1
+elseif Preset == "bandit" then
+    VerticalStrength = 12
+    HorizontalStrength = 1
 elseif Preset == "Castle" then
     VerticalStrength = 30
     HorizontalStrength = 12
-elseif Preset == "Doc" then
-    VerticalStrength = 6
-    HorizontalStrength = -0
-elseif Preset == "Denari" then
-    VerticalStrength = 9
+elseif Preset == "doc" then
+    VerticalStrength = 10
     HorizontalStrength = 0
-elseif Preset == "Echo" then
+elseif Preset == "denari" then
+    VerticalStrength = 14
+    HorizontalStrength = 0
+elseif Preset == "echo" then
+    VerticalStrength = 10
+    HorizontalStrength = 0
+elseif Preset == "ela" then
+    VerticalStrength = 14
+    HorizontalStrength = 0
+elseif Preset == "fenrir" then
     VerticalStrength = 12
+    HorizontalStrength = 1
+elseif Preset == "goyo" then
+    VerticalStrength = 14
     HorizontalStrength = 0
-elseif Preset == "Ela" then
-    VerticalStrength = 9
-    HorizontalStrength = 0
-elseif Preset == "Fenrir" then
-    VerticalStrength = 7
-    HorizontalStrength = 0
-elseif Preset == "Frost" then
-    VerticalStrength = 50
-    HorizontalStrength = 20
-elseif Preset == "Goyo" then
-    VerticalStrength = 9
-    HorizontalStrength = 0
-elseif Preset == "Jäger" then
-    VerticalStrength = 7
-    HorizontalStrength = 0
-elseif Preset == "Kaid" then
-    VerticalStrength = 20
-    HorizontalStrength = 8
-elseif Preset == "Kapkan" then
-    VerticalStrength = 25
-    HorizontalStrength = 10
-elseif Preset == "Lesion" then
-    VerticalStrength = 9
-    HorizontalStrength = 0
-elseif Preset == "Maestro" then
+elseif Preset == "jager" then
+    VerticalStrength = 12
+    HorizontalStrength = -1
+elseif Preset == "kaid" then
     VerticalStrength = 35
-    HorizontalStrength = 14
-elseif Preset == "Melusi" then
-    VerticalStrength = 40
-    HorizontalStrength = 16
-elseif Preset == "Mira" then
-    VerticalStrength = 9
     HorizontalStrength = 0
-elseif Preset == "Mozzie" then
-    VerticalStrength = 50
-    HorizontalStrength = 20
-elseif Preset == "Mute" then
-    VerticalStrength = 12
+elseif Preset == "kapkan" then
+    VerticalStrength = 10
+    HorizontalStrength = 0
+elseif Preset == "lesion" then
+    VerticalStrength = 11
+    HorizontalStrength = 0
+elseif Preset == "maestro" then
+    VerticalStrength = 13
+    HorizontalStrength = 0
+elseif Preset == "melusi" then
+    VerticalStrength = 10
+    HorizontalStrength = 0
+elseif Preset == "mira" then
+    VerticalStrength = 14
+    HorizontalStrength = 0
+elseif Preset == "mozzie" then
+    VerticalStrength = 11
+    HorizontalStrength = 2
+elseif Preset == "mute" then
+    VerticalStrength = 19
     HorizontalStrength = 0
 elseif Preset == "Oryx" then
     VerticalStrength = 9
@@ -174,22 +174,22 @@ elseif Preset == "Rook" then
     VerticalStrength = 6
     HorizontalStrength = -0
 elseif Preset == "Smoke" then
-    VerticalStrength = 11
+    VerticalStrength = 19
     HorizontalStrength = 0
 elseif Preset == "Solis" then
     VerticalStrength = 30
     HorizontalStrength = 12
 elseif Preset == "Thorn" then
-    VerticalStrength = 35
-    HorizontalStrength = 14
+    VerticalStrength = 7
+    HorizontalStrength = 0
 elseif Preset == "Thunderbird" then
     VerticalStrength = 40
     HorizontalStrength = 16
-elseif Preset == "Tubarão" then
-    VerticalStrength = 45
-    HorizontalStrength = 18
-elseif Preset == "Valkyrie" then
-    VerticalStrength = 7
+elseif Preset == "tubarao" then
+    VerticalStrength = 10
+    HorizontalStrength = 0
+elseif Preset == "valkyrie" then
+    VerticalStrength = 12
     HorizontalStrength = 0
 elseif Preset == "Vigil" then
     VerticalStrength = 15
@@ -487,5 +487,4 @@ function OnEvent(event, arg)
             end
         until not IsMouseButtonPressed(3)
     end
-
 end
