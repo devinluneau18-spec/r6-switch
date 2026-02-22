@@ -14,3 +14,6 @@ python -m pip install Pillow
 
 might take a min depending on your pc and internet speed
 these are for the python app to run properaly 
+
+ make sure when making lua script in Ghub that the profile name for the script is "r6 recoil"
+ 
